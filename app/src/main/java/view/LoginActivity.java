@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
     private void startComponents() {
 
 
-        btnFacebook = (LoginButton) findViewById(R.id.btnFacebook);
+        btnFacebook = (Button) findViewById(R.id.btnFacebook);
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
