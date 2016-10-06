@@ -1,5 +1,6 @@
 package util;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -18,6 +19,7 @@ public class DatePickerFragment extends DialogFragment implements
     private static final String TAG = "MY_TRAVELS";
     public EditText editText;
 
+    @SuppressLint("ValidFragment")
     public DatePickerFragment(EditText edit_text) {
         editText = edit_text;
     }
