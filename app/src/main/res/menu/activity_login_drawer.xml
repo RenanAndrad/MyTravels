@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Informações perfil" />
+        <item
+            android:id="@+id/nav_visited"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Países visitados" />
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/ic_coutries"
+            android:title="Lista de países" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_out"
+            android:icon="@drawable/ic_exit"
+            android:title="Sair" />
+
+
+    </group>
+
+</menu>
