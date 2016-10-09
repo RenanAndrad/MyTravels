@@ -8,41 +8,41 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class ManagerSqlite extends SQLiteOpenHelper {
 
 
-    public static final int DATABASE_VERSION = 6;
+    public static final int DATABASE_VERSION = 3;
 
 
-    public static final String DATABASE_NAME = "MyTravels.db";
+    public static final String DATABASE_NAME = "SuperMovies.db";
 
 
-    public static final String TABLE_COUNTRY = "TB_COUNTRY";
+    public static final String TABLE_MOVIE = "TB_MOVIE";
 
 
-    public static final String TABLE_ID_COUNTRY = "id_country";
-    public static final String TABLE_ISO = "iso";
-    public static final String TABLE_SHORTNAME = "shortname";
-    public static final String TABLE_LONGNAME = "longname";
-    public static final String TABLE_CALLIN_GCODE = "callingCode";
-    public static final String TABLE_STATUS = "status";
-    public static final String TABLE_CULTURE = "culture";
-    public static final String TABLE_START_DATE = "startDate";
-    public static final String TABLE_END_DATE = "endDate";
-    public static final String TABLE_IMAGE_URL = "imageUrl";
+    public static final String TABLE_ID_MOVIE= "idmovie";
+    public static final String TABLE_TITLE = "title";
+    public static final String TABLE_PLOT = "plot";
+    public static final String TABLE_YEAR = "year";
+    public static final String TABLE_RUNTIME = "runtime";
+    public static final String TABLE_GENRE = "genre";
+    public static final String TABLE_DIRECTOR = "director";
+    public static final String TABLE_ACTORS = "actors";
+    public static final String TABLE_LANGUAGE = "language";
+    public static final String TABLE_POSTER = "poster";
     public static final String TABLE_ID_FACEBOOK = "idFacebook";
     public static final String TABLE_RATING = "rating";
 
 
     public static final String CREATE_TABLE_COUNTRY =
-            "Create Table " + TABLE_COUNTRY + " ( "
-                    + TABLE_ID_COUNTRY + " integer primary key,"
-                    + TABLE_ISO + " integer,"
-                    + TABLE_SHORTNAME + " text,"
-                    + TABLE_LONGNAME + " text,"
-                    + TABLE_CALLIN_GCODE + " text,"
-                    + TABLE_STATUS + " text, "
-                    + TABLE_CULTURE + " text, "
-                    + TABLE_START_DATE + " text, "
-                    + TABLE_END_DATE + " text, "
-                    + TABLE_IMAGE_URL + " text, "
+            "Create Table " + TABLE_MOVIE + " ( "
+                    + TABLE_ID_MOVIE + " integer primary key autoincrement,"
+                    + TABLE_TITLE + " integer,"
+                    + TABLE_PLOT + " text,"
+                    + TABLE_YEAR + " text,"
+                    + TABLE_RUNTIME + " text,"
+                    + TABLE_GENRE + " text, "
+                    + TABLE_DIRECTOR + " text, "
+                    + TABLE_ACTORS + " text, "
+                    + TABLE_LANGUAGE + " text, "
+                    + TABLE_POSTER + " text, "
                     + TABLE_ID_FACEBOOK + " text, "
                     + TABLE_RATING + " text "
                     + ");";
@@ -58,7 +58,7 @@ public class ManagerSqlite extends SQLiteOpenHelper {
     }
 
     private void dropTables(SQLiteDatabase db) {
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_COUNTRY + ";");
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_MOVIE + ";");
     }
 
     @Override

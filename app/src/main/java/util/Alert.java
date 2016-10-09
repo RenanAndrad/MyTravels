@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.drawable.Drawable;
 
-import com.my_travels.br.mytravels.R;
+import com.super_movies.br.supermovies.R;
 
 
 public class Alert {

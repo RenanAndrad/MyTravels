@@ -22,7 +22,7 @@
         android:paddingTop="@dimen/activity_vertical_margin_top"
         android:gravity="center">
 
-    <com.facebook.login.widget.LoginButton
+    <Button
         android:id="@+id/btnFacebook"
         style="@style/btnBlueAcessoFacebook"
         android:text="@string/logar_facebook"

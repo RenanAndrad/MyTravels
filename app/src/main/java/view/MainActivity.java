@@ -23,14 +23,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.facebook.login.LoginManager;
-import com.my_travels.br.mytravels.R;
+import com.super_movies.br.supermovies.R;
 
 
 import java.net.URL;
 
 import fragment.InformationProfileFragment;
-import fragment.ListCountriesFragment;
-import fragment.VisitedCountriesFragment;
+import fragment.SearchMovieFragment;
+import fragment.SavedMoviesFragment;
 import util.Alert;
 import util.IAlertaConfirmacao;
 
@@ -38,7 +38,7 @@ import util.IAlertaConfirmacao;
 public class MainActivity extends FragmentActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private static final String TAG = "MY TRAVELS";
+    private static final String TAG = "Super Movies";
 
     private Alert alert;
     private FragmentTransaction fragmentTransaction;
@@ -105,19 +105,19 @@ public class MainActivity extends FragmentActivity
                         break;
                     case 2:
                         fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        fragmentTransaction.replace(R.id.fragment, new VisitedCountriesFragment());
+                        fragmentTransaction.replace(R.id.fragment, new SavedMoviesFragment());
                         fragmentTransaction.commit();
                         break;
                     case 3:
                         fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        fragmentTransaction.replace(R.id.fragment, new ListCountriesFragment());
+                        fragmentTransaction.replace(R.id.fragment, new SearchMovieFragment());
                         fragmentTransaction.commit();
                         break;
                 }
 
             } else {
                 fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.fragment, new ListCountriesFragment());
+                fragmentTransaction.replace(R.id.fragment, new SearchMovieFragment());
                 fragmentTransaction.commit();
             }
         } catch (Exception e) {
@@ -194,11 +194,11 @@ public class MainActivity extends FragmentActivity
             intent.putExtra("typeFragment", 1);
             startActivity(intent);
 
-        } else if (id == R.id.nav_visited) {
+        } else if (id == R.id.nav_favorites) {
             Intent intent = new Intent(MainActivity.this, MainActivity.class);
             intent.putExtra("typeFragment", 2);
             startActivity(intent);
-        } else if (id == R.id.nav_list) {
+        } else if (id == R.id.nav_search) {
             Intent intent = new Intent(MainActivity.this, MainActivity.class);
             intent.putExtra("typeFragment", 3);
             startActivity(intent);

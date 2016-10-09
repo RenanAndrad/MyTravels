@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyTravels</string>
+    <string name="app_name">SuperMovies</string>
 
     <string name="timeOfSplash">3</string>
 
@@ -7,26 +7,27 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="logar_facebook">Logar com Facebook</string>
-    <string name="appIdFacebook">1799803343635467</string>
+    <string name="appIdFacebook">531921893679562</string>
 
     <string name="save">Salvar</string>
     <string name="delete">Deletar</string>
 
     <string name="notice">Aviso</string>
-    <string name="msg_add">Deja adicionar na sua lista de países visitados?</string>
+    <string name="msg_add">Deseja salvar esse filme?</string>
     <string name="msg_out">"Deseja realmente sair?</string>
     <string name="msg_delete">"Deseja realmente excluir?</string>
     <string name="save_success">Salvo com sucesso!</string>
-    <string name="start_date">Data inicial:</string>
-    <string name="end_date">Data final:</string>
+
 
     <string name="data">Nao existem dados para mostrar</string>
     <string name="date_invalid">Por favor, insira uma data válida!</string>
-    <string name="listEmpty">Nenhum país encontrado</string>
-    <string name="notice_visited_country">Não ha nenhum país cadastrado</string>
+    <string name="listEmpty">Nenhum filme encontrado</string>
+    <string name="notice_visited_country">Não há nenhum filme cadastrado</string>
     <string name="yes">Sim</string>
     <string name="no">Não</string>
 
+    <string name="alert_movie">Nenhum filme encontrado!</string>
+    <string name="alert_title">Por favor, digite o nome de algum filme para continuar!</string>
     <string name="erro_servidor">Ocorreu uma falha no Servidor! Por favor, tente mais tarde!</string>
     <string name="erro_rede">Pode ter ocorrido um problema com sua internet ou no Servidor! Por favor, verifique e tente novamente!</string>
 </resources>

@@ -22,8 +22,8 @@ import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
-import com.facebook.login.widget.LoginButton;
-import com.my_travels.br.mytravels.R;
+import com.super_movies.br.supermovies.R;
+
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -35,7 +35,7 @@ import java.util.Arrays;
 public class LoginActivity extends AppCompatActivity {
 
 
-    private static final String TAG = "MY TRAVELS";
+    private static final String TAG = "Super Movies";
 
     private Button btnFacebook;
 
@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
     private void startComponents() {
 
 
-        btnFacebook = (LoginButton) findViewById(R.id.btnFacebook);
+        btnFacebook = (Button) findViewById(R.id.btnFacebook);
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
